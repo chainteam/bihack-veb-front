@@ -74,7 +74,7 @@ function errorHandler(error, ctx) {
 // Setup BaseURL
 const baseURL = process.browser
   ? (process.env.API_URL_BROWSER || '/')
-  : (process.env.API_URL || 'http://vebback.01.developers.ruware.com/')
+  : (process.env.API_URL || 'http://127.0.0.1:3100/')
 
 // Custom init hook
 

@@ -10,6 +10,7 @@ module.exports = function(component) {
   }
 
   function _find(req, res, next) {
+    console.log(req.body)
     if (req.body) {
       Contract.methods.getRequest().call((err, resp) => {
         console.log(err, resp)
