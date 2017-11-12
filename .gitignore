@@ -5,8 +5,8 @@ node_modules
 npm-debug.log
 
 # Nuxt build
-.nuxt
+#.nuxt
 
 # Nuxt generate
-dist
+#dist
 .~txt
