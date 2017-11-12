@@ -12,12 +12,16 @@ module.exports = function(component) {
   function _find(req, res, next) {
     console.log(req.body)
     if (req.body) {
-      Contract.methods
-        .getRequest(req.body.obj, req.body.address)
-        .call((err, resp) => {
-          console.log(err, resp)
-          res.json(resp)
-        })
+      try {
+        Contract.methods
+          .getRequest(req.body.obj, req.body.address)
+          .call((err, resp) => {
+            console.log(err, resp)
+            res.json(resp)
+          })
+      } catch (e) {
+        res.send()
+      }
     } else {
       res.send()
     }

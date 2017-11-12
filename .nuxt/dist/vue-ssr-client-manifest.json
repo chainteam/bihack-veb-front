@@ -4,29 +4,29 @@
     "LICENSES",
     "fonts/element-icons.9b70ee4.woff",
     "pages/index.ccd1702f887ffe23c171.js",
-    "pages/information.e8c75792462d7210a9b8.js",
+    "pages/information.9bbed634fe0c5f27b121.js",
     "layouts/default.ef8332d7cebc83fd61ee.js",
     "common.17c130b161c3a7111070.js",
     "app.38df7e2bd68bf9c43834.js",
-    "manifest.102c95ee5b6ccbdc70e6.js",
+    "manifest.81ae56b547418bd353f8.js",
     "fonts/element-icons.27c7209.ttf",
     "pages/index.ccd1702f887ffe23c171.js.map",
-    "pages/information.e8c75792462d7210a9b8.js.map",
+    "pages/information.9bbed634fe0c5f27b121.js.map",
     "layouts/default.ef8332d7cebc83fd61ee.js.map",
     "common.17c130b161c3a7111070.js.map",
     "app.38df7e2bd68bf9c43834.js.map",
-    "manifest.102c95ee5b6ccbdc70e6.js.map",
+    "manifest.81ae56b547418bd353f8.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.102c95ee5b6ccbdc70e6.js",
+    "manifest.81ae56b547418bd353f8.js",
     "common.17c130b161c3a7111070.js",
     "app.38df7e2bd68bf9c43834.js"
   ],
   "async": [
     "pages/index.ccd1702f887ffe23c171.js",
-    "pages/information.e8c75792462d7210a9b8.js",
+    "pages/information.9bbed634fe0c5f27b121.js",
     "layouts/default.ef8332d7cebc83fd61ee.js"
   ],
   "modules": {
@@ -119,6 +119,10 @@
     "c19c1a8c": [
       2,
       9
+    ],
+    "c071840e": [
+      3,
+      10
     ],
     "5ed30097": [
       5,
@@ -288,6 +292,10 @@
       5,
       12
     ],
+    "025deffa": [
+      3,
+      10
+    ],
     "a58f8108": [
       5,
       12
@@ -313,10 +321,6 @@
     "8e1ce412": [
       5,
       12
-    ],
-    "0bfdad16": [
-      3,
-      10
     ],
     "763c96b0": [
       5,
@@ -422,6 +426,10 @@
       5,
       12
     ],
+    "57ac23c2": [
+      3,
+      10
+    ],
     "c70f20c8": [
       5,
       12
@@ -495,10 +503,6 @@
     "eba51d58": [
       5,
       12
-    ],
-    "f5ba04fa": [
-      3,
-      10
     ],
     "5422d321": [
       5,
@@ -804,6 +808,16 @@
       5,
       12
     ],
+    "7cc36cca": [
+      6,
+      13,
+      1,
+      8
+    ],
+    "7d1e50a2": [
+      5,
+      12
+    ],
     "46cf4288": [
       5,
       12
@@ -885,12 +899,6 @@
     "14bbd15e": [
       5,
       12
-    ],
-    "7cc36cca": [
-      6,
-      13,
-      1,
-      8
     ],
     "d8048bcc": [
       5,
@@ -1038,10 +1046,6 @@
       1,
       8
     ],
-    "50c04d5d": [
-      3,
-      10
-    ],
     "55b93098": [
       5,
       12
@@ -1123,10 +1127,6 @@
       12
     ],
     "176d4663": [
-      5,
-      12
-    ],
-    "7d1e50a2": [
       5,
       12
     ],

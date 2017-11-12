@@ -11,7 +11,7 @@
           <b>Запрос данных</b>
         </div>
         <div class="flex">
-          <el-input placeholder="Введите адрес" v-model="address"></el-input>
+          <!-- <el-input placeholder="Введите адрес" v-model="address"></el-input> -->
           <el-input placeholder="Введите идентификатор собственности" v-model="guid"> </el-input>
           <el-button type="info" plain icon="el-icon-search" @click="requestObject">Поиск объекта</el-button>
         </div>
@@ -22,11 +22,14 @@
           <h3>Полученная информация</h3>
           <el-card class="card" :class="{[info.status]: true}">
             <div slot="header">
-              <span>{{info.name}}</span>
+              <span>{{info.title}}</span>
               <b style="float: right; padding: 3px 0" type="text">{{info.status}}</b>
             </div>
             <div>
-              <h4>{{info.title}}</h4>
+              <h4>Собственник:</h4>
+              <div>{{info.owner}}</div>
+              <br>
+              <h4>Данные:</h4>
               <div>{{info.value}}</div>
             </div>
           </el-card>
@@ -41,7 +44,7 @@
           </div>
 
           <!-- <el-collapse class="-collapses" v-model="activeOrders">
-            <el-collapse-item v-for="(order,index) in info.orders" :key="order.title" :title="order.title" :name="index">
+            <el-collapse-item v-for="(order,index) in info.orders" :key="order.title" :title="order.title" :owner="index">
               <div>
                 <h4>{{order.name}}</h4>
                 <div>{{order.value}}</div>
@@ -80,27 +83,27 @@ export default {
           !!!data.status &&
             (this.info = {
               status: 'pending',
-              title: 'title object',
-              name: 'name object',
-              value: 'value object',
+              title: 'Квартира 1',
+              owner: '0xdae3daea4a63ef4b60600194a9cc1daf98b8e3b8',
+              value: 'Изменение прав собственности',
               orders: [
                 {
                   status: 'pending',
-                  title: 'title pending',
-                  name: 'name pending',
-                  value: 'value pending'
+                  title: 'Квартира 1',
+                  owner: '0xdae3daea4a63ef4b60600194a9cc1daf98b8e3b8',
+                  value: 'Изменение прав собственности'
                 },
                 {
                   status: 'accepted',
-                  title: 'title accepted',
-                  name: 'name accepted',
-                  value: 'value accepted'
+                  title: 'Квартира 1',
+                  owner: '0xdae3daea4a63ef4b60600194a9cc1daf98b8e3b8',
+                  value: 'Регистрация'
                 },
                 {
                   status: 'discard',
-                  title: 'title discard',
-                  name: 'name discard',
-                  value: 'value discard'
+                  title: 'Квартира 1',
+                  owner: '0x2FC16BD06f05CC80174F7682C0b58548Fc5A3C75',
+                  value: 'Изменение собственника'
                 }
               ]
             })
