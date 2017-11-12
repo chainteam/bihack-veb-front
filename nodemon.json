@@ -1,0 +1,29 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    ".png",
+    ".jpg",
+    ".log",
+    ".json",
+    "www",
+    ".git",
+    "node_modules",
+    "frontend",
+    ".scaffold",
+    "_gulp",
+    "stores",
+    ".tmp",
+    "uploads",
+    ".vue"
+  ],
+  "verbose": true,
+  "events": {
+    "restart": []
+  },
+  "exec": "node",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": ".js"
+}
