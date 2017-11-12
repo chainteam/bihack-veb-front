@@ -42,7 +42,7 @@ module.exports = {
       {
         baseURL:
           process.env.NODE_ENV != 'production'
-            ? `http://localhost:3100'`
+            ? `http://127.0.0.1:3100`
             : `http://vebback.01.developers.ruware.com`,
         browserBaseURL: '/'
         // credentials: true,
