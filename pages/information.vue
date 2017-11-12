@@ -70,33 +70,38 @@ export default {
   },
   methods: {
     requestObject() {
-      this.$axios.get('/')
-      this.info = {
-        status: 'pending',
-        title: 'title object',
-        name: 'name object',
-        value: 'value object',
-        orders: [
-          {
+      this.$axios.post('/find',{
+        obj: this.guid,
+        address: this.address
+      }).then(({data})=> {
+          !!data.status && this.info = data
+          !!!data.status && this.info = {
             status: 'pending',
-            title: 'title pending',
-            name: 'name pending',
-            value: 'value pending'
-          },
-          {
-            status: 'accepted',
-            title: 'title accepted',
-            name: 'name accepted',
-            value: 'value accepted'
-          },
-          {
-            status: 'discard',
-            title: 'title discard',
-            name: 'name discard',
-            value: 'value discard'
+            title: 'title object',
+            name: 'name object',
+            value: 'value object',
+            orders: [
+              {
+                status: 'pending',
+                title: 'title pending',
+                name: 'name pending',
+                value: 'value pending'
+              },
+              {
+                status: 'accepted',
+                title: 'title accepted',
+                name: 'name accepted',
+                value: 'value accepted'
+              },
+              {
+                status: 'discard',
+                title: 'title discard',
+                name: 'name discard',
+                value: 'value discard'
+              }
+            ]
           }
-        ]
-      }
+      })
     }
   }
 }

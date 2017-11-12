@@ -8,7 +8,9 @@ module.exports = function() {
         get: {
           '?': 'fake'
         },
-        post: {}
+        post: {
+          find: 'find'
+        }
       }
     }
     App.registerComponent(Component).then(() => resolve())
